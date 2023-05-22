@@ -1,8 +1,24 @@
 import React, { memo } from 'react'
+import { TopListWrapper,Content,PlayListLeft,PlayListRight} from './style'
+
 
 const TopList = memo(() => {
   return (
-    <div>TopList</div>
+   <TopListWrapper>
+    <Content className='wrap-v2'>
+      <PlayListLeft>
+        <div className='minelist'>
+          <h2>云音乐特色榜</h2>
+          <ul>
+            {/* {
+
+            } */}
+          </ul>
+        </div>
+      </PlayListLeft>
+      <PlayListRight>ee</PlayListRight>
+    </Content>
+   </TopListWrapper>
   )
 })
 
