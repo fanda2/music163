@@ -1,0 +1,86 @@
+@import "~normalize.css";
+@import "~antd/dist/antd.css";
+
+
+.wrap-v1{
+    width: 1100px;
+    margin: 0 auto;
+}
+.wrap-v2{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.banner{
+    background: url("../img/banner.png") no-repeat 0 9999px;
+}
+.button2{
+    background: url("../img/button2.png") no-repeat 0 9999px;
+}
+
+.cover-all{
+    background: url("../img/coverall.png") no-repeat 0 9999px;
+}
+
+.default-album{
+    background: url("../img/default_album.jpg") no-repeat 0 9999px;
+}
+
+.download{
+    background: url("../img/download.png") no-repeat 0 9999px;
+}
+
+.foot-enter-new{
+    background: url("../img/foot_enter_new2.png") no-repeat 0 9999px;
+    background-size: 220px 220px;
+}
+.icon{
+    background: url("../img/icon.png") no-repeat 0 9999px;
+}
+.icon-all{
+    background: url("../img/iconall.png") no-repeat 0 9999px;
+}
+.index-bill{
+    background: url("../img/index_bill.png") no-repeat 0 9999px;
+}
+
+.index{
+    background: url("../img/index.png") no-repeat 0 9999px;
+}
+.top-bar{
+    background: url("../img/topbar.png") no-repeat 0 9999px;
+}
+.stat-bar{
+    background: url("../img/statbar.png") no-repeat 0 9999px;
+}
+
+.play-bar{
+    background: url("../img/playbar.png") no-repeat 0 9999px;
+}
+.window{
+    background: url("../img/window.png") no-repeat 0 9999px;
+}
+.play-list{
+    background: url("../img/playlist.png") no-repeat 0 9999px;
+}
+
+.img_cover{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-indent: -9999px;
+    background: url("../img/coverall.png") no-repeat -145px -57px;
+}
+body,html{
+    background:  #f2f2f2;
+}
+
+
+.f-thide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
