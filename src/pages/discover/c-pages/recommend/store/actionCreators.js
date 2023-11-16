@@ -3,6 +3,7 @@ import * as actionTypes from "./constants"
 import {getTopBanners,getHotRecommends} from  "@/services/recommend"
 import { getTopAlbums } from "@/services/album"
 import { getTopList } from "@/services/toplist"
+import { getArtistList,getPopularDjList} from "@/services/artist"
 
 const changeTopBannersAction=(res)=>({
     type:actionTypes.CHANGE_TOP_BANNER,
@@ -33,6 +34,15 @@ const changeOriginListAction=(res)=>({
     originList:res.playlist
 })
 
+const changeArtistListAction=(res)=>({
+    type:actionTypes.CHANGE_ARTIST_LIST,
+    artistList:res
+})
+
+const changeDjRadioListAction=(res)=>({
+    type:actionTypes.CHANGE_DJRADIO_LIST,
+    djRadioList:res
+})
 
 export const getTopBannerAction=()=>{
     return dispatch=>{
@@ -75,6 +85,27 @@ export const getTopListAction=(id)=>{
                 break;
             default:
            }
+        })
+    }
+}
+
+
+//调用接口获取数据
+export const getArtistListAction=(offset,limit)=>{
+    return dispatch=>{
+        getArtistList(offset,limit).then((res)=>{
+            const artists=res.artists;
+            dispatch(changeArtistListAction(artists));
+        })
+    }
+}
+
+//获取热门主播
+export const getPopularListAction=(limit)=>{
+    return dispatch=>{
+        getPopularDjList(limit).then((res)=>{
+            const popularDj=res.data.list;
+           dispatch(changeDjRadioListAction(popularDj));
         })
     }
 }

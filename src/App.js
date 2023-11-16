@@ -1,5 +1,6 @@
-import React, {memo} from 'react'
+import React, {Suspense, memo} from 'react'
 import './assets/css/reset.css'
+import "./assets/css/popcover.css"
 import { renderRoutes } from 'react-router-config'
 import routes from './router'
 import {Provider} from "react-redux"
@@ -16,8 +17,9 @@ export default memo( function App() {
     <Provider store={store}>
       <HashRouter>
           <AppHeader/>
-          { renderRoutes(routes)}
-
+          <Suspense>
+              { renderRoutes(routes)}
+          </Suspense>
           <AppPlayerBar/>
           <AppFooter/>
       </HashRouter >

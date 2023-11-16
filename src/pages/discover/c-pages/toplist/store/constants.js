@@ -1,0 +1,3 @@
+export const CHANGE_ALL_TOP_LIST="toplist/CHANGE_ALL_TOP_LIST"
+
+export const CHANGE_LIST_DETAIL="toplist/ CHANGE_LIST_DETAIL"

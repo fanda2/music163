@@ -7,8 +7,9 @@ const PlayList = memo(() => {
    <PlayListWrapper>
     <Content className='wrap-v2'>
        <div className='playlist-content'>
-           ddd
+          
        </div>
+       <div className='playlist-right'></div>
     </Content>
    </PlayListWrapper>
   )

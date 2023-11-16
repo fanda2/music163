@@ -24,6 +24,7 @@ const RankingList = memo((props) => {
       dispatch(getTopListAction(3779629));
       dispatch(getTopListAction(2884035));
     },[dispatch])
+    
   return (
   <RankingWrapper>
     <ThemeHeaderRecommend title={{name:"榜单",link:"/discover/toplist"}}/>

@@ -9,3 +9,10 @@ export function getTopList(id){
     })
 
 }
+
+//获取所有排行榜当
+export function getAllTopList(){
+    return request({
+        url:"/toplist"
+    })
+}
